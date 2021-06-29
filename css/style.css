@@ -1,39 +1,125 @@
-/*
-Theme Name: Netflix
-Author: Kenzie Academy
-Author URI: kenzie.com.br;
-Version: 1.0
- 
---------------------------------------------
-SUGESTÃO DE ESTRUTURAÇÃO BASE 
---------------------------------------------
-**** DECLARAÇÃO DE VARIÁVEIS
-**** BODY
-**** TOPO
-**** RODAPÉ
-**** PÁGINA INICIAL
-*/
 
-/* VARIÁVEIS */
-:root{
-  
+/* CSS RESET */
+html, body, header, figure, img, figcaption, div, section, h2, ul, li, h3, footer, button {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style: none;
 }
 
 /*BODY*/
 	body{
-
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		background-color: #141414;
 	}
 
 /*TOPO*/
-	header.topo{
-		
+	.logo {
+		margin: 1em 3em;
+		width: 10%;
 	}
-
-/*RODAPÉ*/
 	
 
 /*PÁGINA INICIAL*/
 	div.pg-home{
-		
+		display: flex;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+		margin-top: 80px;
 	}
+
+	.perfil {
+		width: 858px;
+		display: flex;
+		justify-content: space-around;
+    	align-items: center;
+	}
+
+	.perfil__card {
+		width: 186px;
+	}
+
+	.perfil__card:hover {
+		border: 4px solid #FFFF;
+	}
+
+	.card--addPerfil {
+		padding: 2em;
+	}
+
+	h2 {
+		color: #FFFF;
+		text-align: center;
+		font-size: 60px;
+    	margin: 0.5em;
+    	font-weight: normal;
+	}
+
+	h3 {
+		color: #787878;
+		text-align: center;
+		margin: 0.5em;
+	}
+
+/*RODAPÉ*/
+
+	footer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 200px;
+	}
+
+	.btn {
+		color: #787878;
+		background: none;
+		padding: 0.5em;
+		text-transform: uppercase;
+		width: 30%;
+		border: 1px solid #787878
+	}
+
+	.btn:hover {
+		border: 2px solid #FFFF;
+		color: #FFFF;
+	}
+	
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 320px) and (max-width: 769px) {
+
+	.logo {
+		width: 20%;
+	}
+
+	.perfil {
+		flex-direction: column;
+	}
+
+	h2 {
+		font-size: 25px;
+	}
+
+	.perfil__card {
+		width: 90px;
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+
+	.card--addPerfil {
+		padding: 1em;
+	}
+
+	.card--list {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
 
