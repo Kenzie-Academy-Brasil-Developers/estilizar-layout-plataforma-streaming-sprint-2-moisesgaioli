@@ -114,7 +114,7 @@ html, body, header, figure, img, figcaption, div, section, h2, ul, li, h3, foote
 		padding: 1em;
 	}
 
-	.card--list {
+	.list {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
